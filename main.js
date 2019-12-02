@@ -20,6 +20,7 @@ function visual(event) {
             if (myArray[i] == 400) {
                 console.log("found 400" + i);
                 myArray.splice(i, 1);
+                i--;
             } 
         }
     }
@@ -33,10 +34,6 @@ function visual(event) {
         }
     }
 }
-
-
-
-
 
 requestAnimationFrame(draw);
 
